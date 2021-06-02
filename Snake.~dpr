@@ -1,0 +1,20 @@
+program Yilan;
+
+uses
+  Forms,
+  Yilanp in 'Yilanp.pas' {Form1},
+  Score in 'Score.pas' {Form2},
+  perde in 'wall.pas' {Form3};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm3, Form3);
+  form3.Show;
+  Application.CreateForm(TForm2, Form2);
+
+  
+  Application.Run;
+end.
